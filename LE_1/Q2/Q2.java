@@ -1,15 +1,5 @@
 
-class mother{
-    public void show(){
-        System.out.println("hii i am mother");
-        
-    }
-}
-class child extends mother{
-    public void show(){
-        System.out.println("hello juet");
-    }
-}
+
 
 public class Q2
 {
