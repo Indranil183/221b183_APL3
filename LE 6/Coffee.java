@@ -3,6 +3,6 @@ class Coffee extends Offering{
         return 20;
     }
     String getName(){
-        return "Coffee";
+        return "Coffee ";
     }
 }
