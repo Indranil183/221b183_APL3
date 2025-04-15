@@ -1,0 +1,30 @@
+Docker:-Docker is an open-source containerization platform that allows developers to package applications and their dependencies into a standardized unit called a container. Containers are lightweight, portable, and isolated from the underlying infrastructure and other containers. This makes them highly efficient and easy to deploy across different environments
+
+Docker commands 
+
+1. docker network ls
+(list all the networks)
+
+2. docker network create mongo-network
+3. docker network ls
+
+4. docker run -d -p 27017:27017 --name mongo --network mongo-network -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=admin mongo
+(-d means container will run in detached mode)
+(-p means code binding)
+
+5. docker ps
+(list all running containers)
+
+6. docker ps -a
+(list all available images)
+
+7. docker network inspect mongo-network
+(list all the properties of mongo-network)
+
+8. docker run -d -p 8081:8081 --name mongo-express --network mongo-network -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=admin -e ME_CONFIG_MONGODB_URL="mongodb://admin:admin@mongo:27017" mongo-express 
+(mongo-express is an admin interface to connect to the mongo database)
+
+
+
+
+
